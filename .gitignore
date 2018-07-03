@@ -7,3 +7,7 @@
 /build
 /captures
 .externalNativeBuild
+/framework_lib/build/
+/framework_view/build/
+/MPChartLib/build/
+/.idea/
