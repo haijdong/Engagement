@@ -1,0 +1,38 @@
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://maven.google.com" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+ext {
+    android = [
+            //app、sdk版本信息
+            applicationId    : "com.dhj.demo_0628",
+            compileSdkVersion: 23,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 14,
+            targetSdkVersion : 22,
+            versionCode      : 1,
+            versionName      : "1.0",
+            openDebug        : true
+    ]
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

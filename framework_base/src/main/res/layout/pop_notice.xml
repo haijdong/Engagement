@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x540"
+        android:layout_height="@dimen/x286"
+        android:background="@drawable/x_shape_bg_delete"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:text="删除信息"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/x42"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/x34"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/describe"
+            android:layout_marginTop="@dimen/x28"
+            android:textColor="@color/gray1"
+            android:text="确定要删除这条信息吗?"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginBottom="@dimen/x92"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"/>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x92"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/iv_commit"
+                android:layout_width="0dip"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/x34"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消" />
+            <View
+                android:background="@color/gray5"
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/cannal"
+                android:layout_width="0dip"
+                android:textColor="#007aff"
+                android:textSize="@dimen/x34"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

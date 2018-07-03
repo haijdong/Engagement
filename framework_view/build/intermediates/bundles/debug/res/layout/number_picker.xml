@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x110"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:padding="@dimen/x4"
+    >
+    
+    
+    <Button 
+	    android:id="@+id/add"
+	    android:layout_width="@dimen/x110"
+	    android:layout_height="@dimen/x90"
+	    android:background="@drawable/picker_up"
+	    />
+	<TextView 
+	    android:id="@+id/content"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x90"
+	    android:textColor="#808080"
+	    android:background="#FAFAFA"
+	    android:gravity="center_vertical|center_horizontal"
+	    />
+	<Button 
+	    android:id="@+id/minus"
+	    android:layout_width="@dimen/x110"
+	    android:layout_height="@dimen/x90"
+	    android:background="@drawable/picker_down"
+	    />
+
+</LinearLayout>

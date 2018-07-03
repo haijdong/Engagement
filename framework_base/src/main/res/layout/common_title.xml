@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headRy"
+    android:background="#0e9bff"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x88"
+    android:paddingBottom="0px"
+    android:paddingTop="0px">
+
+    <TextView
+        android:id="@+id/LButton"
+        android:gravity="center_vertical"
+        style="@style/Txt_W_R_30"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:drawableLeft="@drawable/btn_back_selector"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Txt_W_R_34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        />
+
+    <ImageView
+        android:id="@+id/select_photo_arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_toRightOf="@id/title"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/EButton"
+        style="@style/Txt_W_R_26"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/RButton"
+        android:background="@null"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/RButton"
+        style="@style/Txt_W_R_26"
+        android:drawablePadding="@dimen/x6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

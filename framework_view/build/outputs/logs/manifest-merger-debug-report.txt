@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:2:1-24
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:4:1-26
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:3:1-24
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:6:1-8:37
+	android:targetSdkVersion
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:8:5-34
+	android:minSdkVersion
+		ADDED from /Users/donghaijun/Engagement/framework_view/AndroidManifest.xml:7:5-31

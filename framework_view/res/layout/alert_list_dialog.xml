@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:background="@drawable/bg_door_dialog_delete"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+	    android:background="#f1f1f1"
+	    android:paddingLeft="@dimen/x30"
+	    android:paddingRight="@dimen/x30"
+        >
+		<TextView
+		    android:id="@+id/alert_title"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="@dimen/x80"
+		    android:gravity="left|center_vertical"
+		    android:textColor="#2F3034"
+		    android:textSize="@dimen/x34"
+		    />
+		<TextView
+		    android:id="@+id/alert_right"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:textColor="#2F3034"
+		    android:textSize="@dimen/x34"
+		    />
+
+    </LinearLayout>
+
+	<ListView
+	    android:id="@+id/alert_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/common_line"
+	    android:cacheColorHint="#00000000"
+	    android:listSelector="@android:color/transparent"
+		android:dividerHeight="@dimen/x1"
+		android:scrollbars="none"
+	    android:layout_below="@id/title_layout"
+	    />
+
+</RelativeLayout>

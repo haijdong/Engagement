@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+
+    <FrameLayout
+        android:id="@+id/graffitiContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:background="#CD000000"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        >
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x28"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑照片"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x28"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:background="@drawable/shape_edit_image"
+            >
+
+            <ImageView
+                android:id="@+id/undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_editimg_cancel_nor"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginBottom="@dimen/x15"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x98"
+            android:background="#CD000000"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画圈标记问题点"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x28"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/finish"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x68"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x28"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edit_image_btn"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

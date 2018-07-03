@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@android:color/white"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    >
+    
+	<TextView 
+	    android:id="@+id/alert_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x80"
+	    android:gravity="center"
+	    android:textColor="@android:color/black"
+	    android:background="#f1f1f1"
+	    android:textSize="@dimen/x34"
+	    />
+	
+	<ListView
+	    android:id="@+id/alert_list"
+	    android:background="@android:color/white" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/common_line"  
+	    android:cacheColorHint="#00000000"
+	    android:listSelector="@android:color/transparent"
+		android:dividerHeight="@dimen/x2" 
+		android:scrollbars="none" 
+	    android:layout_below="@+id/alert_title"
+	    />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x84"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/alert_list"
+	    >
+	    <Button 
+	        android:id="@+id/alert_rbtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/btn_dialogue_right_selector"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/black"
+	        />
+	    <Button 
+	        android:id="@+id/alert_lbtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/btn_dialogue_left_selector"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/black"
+	        />
+	</LinearLayout>
+	
+</RelativeLayout>

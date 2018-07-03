@@ -1,0 +1,24 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black"
+    >
+
+    <!-- ExtendedViewPager is a custom view and must be referred to by its full package name in XML -->
+	<com.segi.view.imageview.touch.ExtendedViewPager 
+	    android:id="@+id/view_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+	
+	<TextView
+        android:id="@+id/current_page_site"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x40"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/white" 
+        />
+	
+</RelativeLayout>

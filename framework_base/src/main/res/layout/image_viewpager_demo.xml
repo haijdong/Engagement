@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black"
+    >
+
+    <!-- ExtendedViewPager is a custom view and must be referred to by its full package name in XML -->
+	<com.segi.view.imageview.touch.ExtendedViewPager 
+	    android:id="@+id/view_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_half_80"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88"
+            >
+            <Button
+                android:id="@+id/LButton"
+                style="@style/Txt_W_R_30"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableLeft="@drawable/btn_back_selector"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/x30"
+                />
+
+            <TextView
+                android:id="@+id/current_page_site"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/Txt_W_R_32"
+                />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/Txt_W_R_32"
+                android:layout_alignParentRight="true"
+                android:text="@string/delete"
+                android:paddingRight="@dimen/x30"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

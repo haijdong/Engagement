@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CommonBg_Gray"
+    android:orientation="vertical" 
+    android:id="@+id/layout"
+    >
+    
+    <include 
+        android:id="@+id/head"
+    	layout="@layout/common_title"    
+        />
+    <ProgressBar  
+        android:id="@+id/pb"  
+        style="?android:attr/progressBarStyleHorizontal"  
+        android:layout_width="fill_parent"  
+        android:layout_height="@dimen/x8"  
+        android:indeterminateOnly="false"  
+        android:max="100"  
+        android:progressDrawable="@drawable/progress_web" 
+    	/>  
+    <View 
+        android:id="@+id/line"
+    	style="@style/view_divider_style_horizontal"
+    	android:visibility="gone"    
+        />
+    <com.segi.view.webview.CustomWebView 
+        android:id="@+id/html_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        />
+</LinearLayout>

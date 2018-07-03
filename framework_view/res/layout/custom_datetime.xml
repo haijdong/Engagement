@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center"
+    >
+    
+	<TextView 
+	    android:id="@+id/timeTv"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x80"
+	    android:gravity="left|center_vertical"
+	    android:textColor="@android:color/black"
+	    android:background="#f1f1f1"
+	    android:textSize="17sp"
+	    android:paddingLeft="@dimen/x10"
+	    />
+	
+	<LinearLayout 
+        android:id="@+id/time_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x280"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+	    android:background="@android:color/white"
+	    
+        />
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/x84"
+	    android:orientation="horizontal"
+	    >
+	    <Button 
+	        android:id="@+id/cancelBtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/btn_dialogue_left_selector"
+	        android:textColor="@android:color/black"
+	        android:layout_weight="1"
+	        android:text="@string/cancel"
+	        />
+	    <Button 
+	        android:id="@+id/okBtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/btn_dialogue_right_selector"
+	        android:textColor="@android:color/black"
+	        android:layout_weight="1"
+	        android:text="@string/ok"
+	        />
+	</LinearLayout>
+	
+</LinearLayout>

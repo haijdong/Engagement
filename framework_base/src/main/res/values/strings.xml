@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_null">这儿什么都没有</string>
+    <string name="scan">扫一扫</string>
+    <string name="check_all">全部</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="exit_system">再点一次退出应用</string>
+    <string name="clear">清除</string>
+    <string name="submit">提交</string>
+    <string name="save">保存</string>
+    <string name="or">或</string>
+    <string name="search">查询</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- loading -->
+    <string name="loading">正在努力加载中...</string>
+    <string name="submiting">正在努力提交中...</string>
+    <string name="deleting">正在删除中...</string>
+    <string name="please_wait">请稍等...</string>
+    <string name="searching">正在努力搜索中...</string>
+    <!-- 相册 -->
+    <string name="finish_num">完成(%1$s)</string>
+    <string name="select_max_size">最多只能选择%1$s张图片</string>
+
+</resources>

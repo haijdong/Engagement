@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+def configInfo = rootProject.ext.android
+
+android {
+    compileSdkVersion configInfo.compileSdkVersion
+    buildToolsVersion configInfo.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion configInfo.minSdkVersion
+        targetSdkVersion configInfo.targetSdkVersion
+
+        buildConfigField("Boolean", "OPEN_DEBUG", "${configInfo.openDebug}")
+
+        manifestPlaceholders = [
+                bdapp_key      : "l0HUsuF53oXyfLCm0A1SpHnBMMZihxZW",
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        disable "ResourceType"
+    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':framework_view')
+    compile 'com.aliyun.dpa:oss-android-sdk:2.4.5'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+}

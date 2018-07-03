@@ -1,0 +1,37 @@
+<resources>
+    <!-- ViewPager的间隔 -->
+    <dimen name="pciture_view_pager_margin">@dimen/x160</dimen>
+    <!-- 工具栏上按钮的间距 -->
+    <dimen name="picture_action_bar_button_margin">0dp</dimen>
+    <dimen name="picture_action_bar_height">@dimen/x96</dimen>
+    <!-- 重新加载文字字体大小 -->
+    <dimen name="picture_reload_text_size">@dimen/x32</dimen>
+    <!-- 图集标题字体大小 -->
+    <dimen name="picture_album_title_text_size">@dimen/x24</dimen>
+    <!-- 图集中图片数量字体大小 -->
+    <dimen name="picture_count_text_size">@dimen/x24</dimen>
+    <!-- 图集View的间隔 -->
+    <dimen name="picture_album_view_margin">@dimen/x16</dimen>
+    <dimen name="picture_album_view_margin_bottom">@dimen/x18</dimen>
+    <dimen name="picture_album_text_margin">@dimen/x12</dimen>
+    <dimen name="picture_album_column_margin">@dimen/x10</dimen>
+    <dimen name="picture_album_top_margin">@dimen/x20</dimen>
+    <dimen name="picture_album_item_title_height">@dimen/x60</dimen>
+    <!-- 工具栏上显示1/6文字的字体大小 -->
+    <dimen name="picture_action_bar_page_index_text_size">@dimen/x36</dimen>
+    <!-- 用户引导边距 -->
+    <dimen name="picture_user_guide_margin">@dimen/x16</dimen>
+    <!-- 正在加载文本上边距 -->
+    <dimen name="picture_loading_text_top_margin">@dimen/x24</dimen>
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">@dimen/x28</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">@dimen/x20</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">@dimen/x12</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">@dimen/x80</dimen>
+
+
+
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+</resources>

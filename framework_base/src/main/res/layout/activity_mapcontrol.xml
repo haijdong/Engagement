@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    style="@style/CommonBg_Gray"
+    >
+
+    <include layout="@layout/common_title"/>
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+	    <com.baidu.mapapi.map.MapView
+	        android:id="@+id/bmapView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:clickable="true" 
+	        />
+        <ImageView 
+            android:id="@+id/currentSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_refresh"
+            android:layout_margin="@dimen/x10"
+            android:layout_alignBottom="@id/bmapView"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <Button 
+	        android:id="@+id/start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="开始"
+	        />
+        
+	    <Button 
+	        android:id="@+id/clear"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="清除"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/keyword"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        style="@style/Et_1_R_32"
+	        android:background="@color/transparent"
+	        />
+	    
+	    <Button 
+	        android:id="@+id/search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="搜索"
+	        />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/location_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

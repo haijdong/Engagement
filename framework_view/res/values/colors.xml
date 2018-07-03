@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <!-- 分割线颜色 -->
+  <color name="common_line">#d5d5d5</color>
+  <color name="blue">#ff0000ff</color>
+  <color name="theme">#0196FF</color>
+  <!-- 扫描 -->
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_view">#b0000000</color>
+  <color name="viewfinder_corner">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  
+  <color name="divider_color_l">#e5e5e5</color>
+  <color name="green_tip">#3bbb50</color>
+  <color name="black_tip">#333333</color>
+  <color name="picker_nor">#C2C2C2</color>
+</resources>

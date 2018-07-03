@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CommonBg_Gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/common_title" />
+
+    <GridView
+        android:id="@+id/more_photo_gr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+        android:horizontalSpacing="@dimen/x10"
+        android:listSelector="@drawable/listview_selector"
+        android:numColumns="3"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/x10"
+        android:background="@color/white"
+        >
+    </GridView>
+
+    <View
+        style="@style/view_divider_style_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x98"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Txt_C_R_28"
+            android:text="@string/edit"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/finishSelect"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/x140"
+            android:layout_height="@dimen/x68"
+            android:gravity="center"
+            android:text="@string/finish_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x28"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:background="@drawable/photo_finish_btn"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

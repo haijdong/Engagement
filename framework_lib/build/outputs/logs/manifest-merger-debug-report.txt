@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:1-12:12
+	package
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:2:5-32
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+		INJECTED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:8:9-38
+	android:minSdkVersion
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:7:9-34
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /Users/donghaijun/Engagement/framework_lib/AndroidManifest.xml:10:22-73

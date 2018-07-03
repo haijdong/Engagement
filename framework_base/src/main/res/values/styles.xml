@@ -1,0 +1,635 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AnimBottom2" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="AnimInBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+`    <!-- 分割线 -->
+    <style name="CommonLine">
+        <item name="android:background">@color/common_line2</item>
+    </style>
+    <style name="view_divider_style_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x2</item>
+        <item name="android:background">@color/common_line2</item>
+    </style>
+    <style name="view_divider_style_horizontal_s">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x1</item>
+        <item name="android:background">@color/common_line2</item>
+    </style>
+    <style name="view_divider_style_vertical">
+        <item name="android:layout_width">@dimen/x2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/common_line2</item>
+    </style>
+    <style name="view_divider_style_vertical_s">
+        <item name="android:layout_width">@dimen/x1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/common_line2</item>
+    </style>
+    <style name="view_divider_style_horizontal_w">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x2</item>
+        <item name="android:background">@color/white_40</item>
+    </style>
+    <style name="view_divider_style_vertical_w">
+        <item name="android:layout_width">@dimen/x2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white_40</item>
+    </style>
+    <!-- listview的分割线 -->
+    <style name="CommonListLine">
+        <item name="android:divider">@color/common_line2</item>
+        <item name="android:dividerHeight">@dimen/x1</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@drawable/listview_selector</item>
+    </style>
+    <!-- listview没有分割线 -->
+    <style name="CommonListNoneLine">
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@drawable/listview_selector</item>
+    </style>
+    <!-- listview没有点击颜色 -->
+    <style name="CommonListNoneSelector">
+        <item name="android:divider">@color/common_line2</item>
+        <item name="android:dividerHeight">@dimen/x1</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+    <!-- listview没有分割线没有点击颜色 -->
+    <style name="CommonListNoneLineSelector">
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+    <!-- gridview -->
+    <style name="CommonGridView">
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@drawable/listview_selector</item>
+    </style>
+
+    <!-- 背景颜色，灰色 -->
+    <style name="CommonBg_Gray">
+        <item name="android:background">@color/common_bg</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
+    <!-- 背景颜色，白色 -->
+    <style name="CommonBg_White">
+        <item name="android:background">@color/white</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
+    <!-- 背景颜色，绿色 -->
+    <style name="CommonBg_Theme">
+        <item name="android:background">@color/theme</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
+    <!-- #ffffff,Regular,44px -->
+    <style name="Txt_W_R_44">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x44</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,42px -->
+    <style name="Txt_W_R_42">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x42</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,36px -->
+    <style name="Txt_W_R_36">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x36</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Txt_W_R_34">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,32px -->
+    <style name="Txt_W_R_32">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,26px -->
+    <style name="Txt_W_R_26">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- #ffffff,Regular,30px -->
+    <style name="Txt_W_R_30">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,28px -->
+    <style name="Txt_W_R_28">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,24px -->
+    <style name="Txt_W_R_24">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Txt_W_R_23">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,20px -->
+    <style name="Txt_W_R_20">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #ffffff,Regular,22px -->
+    <style name="Txt_W_R_22">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,44px -->
+    <style name="Txt_1_R_44">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x44</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,36px -->
+    <style name="Txt_1_R_36">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x36</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,32px -->
+    <style name="Txt_1_R_32">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,34px -->
+    <style name="Txt_1_R_34">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:textSize">@dimen/x34</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,30px -->
+    <style name="Txt_1_R_30">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- black,32px -->
+    <style name="Txt_1_B_32">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- #333333,Regular,28px -->
+    <style name="Txt_1_R_28">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- #333333,Regular,26px -->
+    <style name="Txt_1_R_26">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- #333333,Regular,24px -->
+    <style name="Txt_1_R_24">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+	<!-- #333333,Regular,22px -->
+    <style name="Txt_1_R_22">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,36px -->
+    <style name="Txt_2_R_36">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x36</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,32px -->
+    <style name="Txt_2_R_32">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+    </style>
+    <!-- #666666,Regular,30px -->
+    <style name="Txt_2_R_30">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,32px -->
+    <style name="Txt_2_R_28">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- #666666,Regular,26px -->
+    <style name="Txt_2_R_26">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,24px -->
+    <style name="Txt_2_R_24">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,22px -->
+    <style name="Txt_2_R_22">
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,20px -->
+    <style name="Txt_3_R_20">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x20</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #666666,Regular,22px -->
+    <style name="Txt_3_R_22">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #999999,Regular,26px -->
+    <style name="Txt_3_R_26">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #999999,Regular,32px -->
+    <style name="Txt_3_R_32">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #999999,Regular,24px -->
+    <style name="Txt_3_R_24">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #999999,Regular,28px -->
+    <style name="Txt_3_R_28">
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,22px -->
+    <style name="Txt_G_R_22">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x22</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,24px -->
+    <style name="Txt_G_R_24">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,26px -->
+    <style name="Txt_G_R_26">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,28px -->
+    <style name="Txt_G_R_28">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,32px -->
+    <style name="Txt_G_R_32">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,36px -->
+    <style name="Txt_G_R_36">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x36</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,42px -->
+    <style name="Txt_G_R_42">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x42</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCF99,Regular,72px -->
+    <style name="Txt_G_R_72">
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/x72</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FAA419,Regular,24px -->
+    <style name="Txt_O_R_24">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FAA419,Regular,26px -->
+    <style name="Txt_O_R_26">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FAA419,Regular,28px -->
+    <style name="Txt_O_R_28">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FAA419,Regular,30px -->
+    <style name="Txt_O_R_30">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FAA419,Regular,32px -->
+    <style name="Txt_O_R_32">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #333333,Regular,24px -->
+    <style name="Et_1_R_32">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/gray3</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #333333,Regular,24px -->
+    <style name="Et_1_R_32_C">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #333333,Regular,30px -->
+    <style name="Et_1_R_30_C">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #333333,Regular,28px -->
+    <style name="Et_1_R_28_4">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/gray4</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #FF5858,Regular,24px -->
+    <style name="Et_R_R_32_C">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #333333,Regular,28px -->
+    <style name="Et_1_R_28_C">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #333333,Regular,26px -->
+    <style name="Et_1_R_26_C">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/grayC</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #6BCEF7,Regular,24px -->
+    <style name="Txt_B_R_24">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCEF7,Regular,26px -->
+    <style name="Txt_B_R_26">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCEF7,Regular,28px -->
+    <style name="Txt_B_R_28">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCEF7,Regular,30px -->
+    <style name="Txt_B_R_30">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #6BCEF7,Regular,32px -->
+    <style name="Txt_B_R_32">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #99999,Regular,30px -->
+    <style name="Txt_3_R_30">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #c0c0c0,Regular,28px -->
+    <style name="Txt_4_R_28">
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #c0c0c0,Regular,24px -->
+    <style name="Txt_4_R_24">
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #c0c0c0,Regular,26px -->
+    <style name="Txt_4_R_26">
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #c0c0c0,Regular,30px -->
+    <style name="Txt_C_R_30">
+        <item name="android:textColor">@color/grayC</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- #c0c0c0,Regular,28px -->
+    <style name="Txt_C_R_28">
+        <item name="android:textColor">@color/grayC</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FF5858,Regular,24px -->
+    <style name="Txt_R_R_24">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FF5858,Regular,28px -->
+    <style name="Txt_R_R_28">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/x28</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- #FF5858,Regular,32px -->
+    <style name="Txt_R_R_32">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/x32</item>
+        <item name="android:textStyle">normal</item>
+    </style>    <!-- #FF5858,Regular,32px -->
+    <style name="Txt_7894AE_R_24">
+        <item name="android:textColor">#7894ae</item>
+        <item name="android:textSize">@dimen/x24</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="customTransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="EditText_1_R_32">
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">@dimen/x30</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@null</item>
+        <item name="android:minWidth">@dimen/x400</item>
+    </style>
+
+    <style name="bottomDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <!-- 弹窗进度条样式 -->
+    <style name="DialogProgress" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">@dimen/x12</item>
+        <item name="android:minHeight">@dimen/x12</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/dialog_progress</item>
+    </style>
+    
+    
+    <!-- 滚动时间选择器基本样式 -->
+    <style name="BaseNumPickerTheme">
+        <item name="npv_DividerHeight">@dimen/x2</item>
+        <item name="npv_DividerColor">@color/theme</item>
+        <item name="npv_DividerMarginLeft">@dimen/x15</item>
+        <item name="npv_DividerMarginRight">@dimen/x15</item>
+        <item name="npv_ItemPaddingHorizontal">@dimen/x30</item>
+        <item name="npv_ItemPaddingVertical">@dimen/x30</item>
+        <item name="npv_TextSizeNormal">@dimen/x26</item>
+        <item name="npv_TextSizeSelected">@dimen/x26</item>
+        <item name="npv_TextColorNormal">@color/gray3</item>
+        <item name="npv_TextColorSelected">@color/gray1</item>
+    </style>
+    
+    <!-- 年份选择器样式 -->
+    <style name="YearNumPickerTheme" parent="BaseNumPickerTheme">
+        <item name="npv_TextArray">@array/year_display</item>
+    </style>
+    
+    <!-- 月份选择器样式 -->
+    <style name="MonthNumPickerTheme" parent="BaseNumPickerTheme">
+        <item name="npv_TextArray">@array/month_display</item>
+    </style>
+    
+    <!-- 日选择器样式 -->
+    <style name="DayNumPickerTheme" parent="BaseNumPickerTheme">
+        <item name="npv_TextArray">@array/day_display</item>
+    </style>
+    
+    <!-- 小时选择器样式 -->
+    <style name="HourNumPickerTheme" parent="BaseNumPickerTheme">
+        <item name="npv_TextArray">@array/hour_display</item>
+    </style>
+    
+    <!-- 分钟选择器样式 -->
+    <style name="MinuteNumPickerTheme" parent="BaseNumPickerTheme">
+        <item name="npv_TextArray">@array/minute_display</item>
+    </style>
+
+</resources>
