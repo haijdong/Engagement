@@ -8,10 +8,62 @@
     android:orientation="vertical"
     tools:context="com.dhj.demo_0628.MainActivity">
 
-    <com.dhj.demo_0628.common.view.PercentView
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
 
+    </FrameLayout>
+
+    <View
+        android:id="@+id/main_tab_divider"
+        style="@style/view_divider_style_horizontal" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/radioButton_style"
+            android:drawableTop="@drawable/main_tab_1_selector"
+            android:text="@string/menu_one"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_found"
+            style="@style/radioButton_style"
+            android:drawableTop="@drawable/main_tab_2_selector"
+            android:text="@string/menu_two"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_love"
+            style="@style/radioButton_style"
+            android:drawableTop="@drawable/main_tab_3_selector"
+            android:text="@string/menu_three"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/radioButton_style"
+            android:drawableTop="@drawable/main_tab_4_selector"
+            android:text="@string/menu_four"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/radioButton_style"
+            android:drawableTop="@drawable/main_tab_5_selector"
+            android:text="@string/menu_five"
+            android:textSize="10dp" />
+    </RadioGroup>
 
 
 </LinearLayout>
