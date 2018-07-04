@@ -11,3 +11,10 @@
 /framework_view/build/
 /MPChartLib/build/
 /.idea/
+framework_view/bin/framework_view.jar
+framework_lib/bin/jarlist.cache
+framework_lib/bin/framework_lib.jar
+framework_lib/.settings/org.eclipse.jdt.core.prefs
+framework_view/.settings/org.eclipse.jdt.core.prefs
+framework_lib/bin/framework_lib.jar
+framework_view/bin/framework_view.jar
