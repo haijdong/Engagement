@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.dhj.demo_0628.MainActivity">
+    tools:context="com.synjones.huixinexiao.MainActivity">
 
     <FrameLayout
         android:id="@+id/fl_container"
@@ -20,50 +20,56 @@
         android:id="@+id/main_tab_divider"
         style="@style/view_divider_style_horizontal" />
 
-    <RadioGroup
-        android:id="@+id/rg_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <RelativeLayout
         android:layout_alignParentBottom="true"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/rb_home"
-            style="@style/radioButton_style"
-            android:drawableTop="@drawable/main_tab_1_selector"
-            android:text="@string/menu_one"
-            android:textSize="10dp" />
-
-        <RadioButton
-            android:id="@+id/rb_found"
-            style="@style/radioButton_style"
-            android:drawableTop="@drawable/main_tab_2_selector"
-            android:text="@string/menu_two"
-            android:textSize="10dp" />
-
-        <RadioButton
-            android:id="@+id/rb_love"
-            style="@style/radioButton_style"
-            android:drawableTop="@drawable/main_tab_3_selector"
-            android:text="@string/menu_three"
-            android:textSize="10dp" />
-
-        <RadioButton
-            android:id="@+id/rb_message"
-            style="@style/radioButton_style"
-            android:drawableTop="@drawable/main_tab_4_selector"
-            android:text="@string/menu_four"
-            android:textSize="10dp" />
-
-        <RadioButton
-            android:id="@+id/rb_mine"
-            style="@style/radioButton_style"
-            android:drawableTop="@drawable/main_tab_5_selector"
-            android:text="@string/menu_five"
-            android:textSize="10dp" />
-    </RadioGroup>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/main_tab_1_selector"
+                android:text="@string/menu_one"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_found"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/main_tab_2_selector"
+                android:text="@string/menu_two"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_love"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/main_tab_3_selector"
+                android:text="@string/menu_three"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/main_tab_4_selector"
+                android:text="@string/menu_four"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/radioButton_style"
+                android:drawableTop="@drawable/main_tab_5_selector"
+                android:text="@string/menu_five"
+                android:textSize="10dp" />
+
+
+        </RadioGroup>
+    </RelativeLayout>
 </LinearLayout>

@@ -5,7 +5,7 @@
     <style name="radioButton_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@drawable/tab_tv_color_selector</item>
+        <item name="android:textColor">@drawable/main_tab_1_selector</item>
         <item name="android:drawablePadding">@dimen/x10</item>
         <item name="android:padding">5dp</item>
         <item name="android:background">@android:color/transparent</item>

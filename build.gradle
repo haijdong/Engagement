@@ -23,7 +23,7 @@ ext {
     android = [
             //app、sdk版本信息
             applicationId    : "com.dhj.demo_0628",
-            compileSdkVersion: 23,
+            compileSdkVersion: 26,
             buildToolsVersion: "26.0.2",
             minSdkVersion    : 14,
             targetSdkVersion : 22,

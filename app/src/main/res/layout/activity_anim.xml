@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.school.activity.AnimActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/alpha"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#979292"
+            android:gravity="center"
+            android:text="ALPHA" />
+
+        <TextView
+            android:id="@+id/scale"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#979292"
+            android:gravity="center"
+            android:text="SCALE" />
+
+        <TextView
+            android:id="@+id/rotate"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#979292"
+            android:gravity="center"
+            android:text="ROTATE" />
+
+        <TextView
+            android:id="@+id/trans"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#979292"
+            android:gravity="center"
+            android:text="TRANS" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/anim"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center"
+        android:background="@color/theme"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200" />
+</LinearLayout>

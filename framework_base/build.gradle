@@ -15,6 +15,10 @@ android {
         manifestPlaceholders = [
                 bdapp_key      : "l0HUsuF53oXyfLCm0A1SpHnBMMZihxZW",
         ]
+
+//        //RenderScript向下兼容
+//        renderscriptTargetApi 18
+//        renderscriptSupportModeEnabled true
     }
 
     buildTypes {

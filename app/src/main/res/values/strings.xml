@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Demo_0628</string>
     <string name="menu_one">主页</string>
-    <string name="menu_two">圈子</string>
-    <string name="menu_three">其他</string>
-    <string name="menu_four">好友</string>
+    <string name="menu_two">校园</string>
+    <string name="menu_three"></string>
+    <string name="menu_four">动态</string>
     <string name="menu_five">我的</string>
 </resources>

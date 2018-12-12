@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-
 def configInfo = rootProject.ext.android
-
 android {
     compileSdkVersion configInfo.compileSdkVersion
     buildToolsVersion configInfo.buildToolsVersion
@@ -32,8 +30,11 @@ android {
         release.setRoot('build-types/release')
     }
 
-    defaultConfig{
+    defaultConfig {
         multiDexEnabled true
+        //RenderScript向下兼容
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
     }
 
     compileOptions {
@@ -41,7 +42,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    lintOptions{
+    lintOptions {
         disable "ResourceType"
     }
 

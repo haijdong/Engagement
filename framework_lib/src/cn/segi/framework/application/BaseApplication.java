@@ -47,7 +47,7 @@ public abstract class BaseApplication extends Application {
 	 * 应用启动时调用的方法
 	 */
 	private void startApplication(){
-		createDir();
+//		createDir();
 		BaseCrashHandler.getInstance(BaseApplication.this);
 		initHttpsCertificateParams();
 	}

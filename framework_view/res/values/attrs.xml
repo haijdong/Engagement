@@ -169,8 +169,8 @@
     </declare-styleable>
 
     <declare-styleable name="CircleView">
-        <attr name="circleColor" format="color"/>
-        <attr name="circleRadius" format="float"/>
-        <attr name="circleText" format="string"/>
+        <attr name="circleColor" format="color" />
+        <attr name="circleRadius" format="float" />
+        <attr name="circleText" format="string" />
     </declare-styleable>
 </resources>
